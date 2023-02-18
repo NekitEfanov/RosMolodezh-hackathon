@@ -16,16 +16,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt5 COMPONENTS Widgets Core Network REQUIRED)
 #find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets Core Network REQUIRED)
 
-set( INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include )
-set( SRC_DIR ${CMAKE_SOURCE_DIR}/src )
+set( INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
+	
+set( SRC_DIR ${CMAKE_SOURCE_DIR}/src)
 
 include_directories( ${INCLUDE_DIR} )
 
-file( GLOB HEADERS "${INCLUDE_DIR}/*.h" "${INCLUDE_DIR}/*.hpp" "${INCLUDE_DIR}/*.ui" )
-file( GLOB FORMS "${INCLUDE_DIR}/*.ui" )
+file( GLOB HEADERS "${INCLUDE_DIR}/*.h" "${INCLUDE_DIR}/*.hpp")
 file( GLOB SOURCES "${SRC_DIR}/*.c" "${SRC_DIR}/*.cpp" )
 
-set( PROJECT_SOURCES ${SOURCES} ${HEADERS} ${FORMS} )
+set( PROJECT_SOURCES ${SOURCES} ${HEADERS} resources.qrc )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL)
     qt_add_executable(${PROJECT_NAME}
