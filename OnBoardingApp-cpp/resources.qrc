@@ -1,5 +1,16 @@
 <RCC>
-    <qresource prefix="/image">
-		<file>resources/MenuWidget/MenuButton.png</file>
-	</qresource>
+  <qresource prefix="/image">
+    <file>resources/MenuWidget/MenuButton.png</file>
+    <file>resources/MenuWidget/CalendarButton.png</file>
+    <file>resources/MenuWidget/ChatButton.png</file>
+    <file>resources/MenuWidget/ContactsButton.png</file>
+    <file>resources/MenuWidget/DocumentsButton.png</file>
+    <file>resources/MenuWidget/StatisticsButton.png</file>
+    <file>resources/MenuWidget/MenuButtonActive.png</file>
+    <file>resources/MenuWidget/CalendarButtonActive.png</file>
+    <file>resources/MenuWidget/ChatButtonActive.png</file>
+    <file>resources/MenuWidget/ContactsButtonActive.png</file>
+    <file>resources/MenuWidget/DocumentsButtonActive.png</file>
+    <file>resources/MenuWidget/StatisticsButtonActive.png</file>
+  </qresource>
 </RCC>

@@ -4,4 +4,5 @@
 
 class CalendarWidget : public BaseWidget {
 public:
+    explicit CalendarWidget(QWidget* parent = nullptr);
 };

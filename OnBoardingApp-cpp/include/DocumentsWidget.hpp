@@ -4,4 +4,5 @@
 
 class DocumentsWidget : public BaseWidget {
 public:
+    explicit DocumentsWidget(QWidget* parent = nullptr);
 };

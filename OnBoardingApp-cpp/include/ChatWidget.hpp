@@ -4,4 +4,5 @@
 
 class ChatWidget : public BaseWidget {
 public:
+    explicit ChatWidget(QWidget* parent = nullptr);
 };

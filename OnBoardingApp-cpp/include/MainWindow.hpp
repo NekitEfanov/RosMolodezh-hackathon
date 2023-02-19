@@ -37,13 +37,14 @@ public:
     MainWindow();
 
 private:
-    //void resizeEvent(QResizeEvent* event) override;
-
     void create_buttons();
     void add_buttons();
 
     std::map<std::string, BaseWidget*> m_widgets;
     std::map<std::string, QPushButton*> m_buttons;
+
+    BaseWidget* m_active_widget{nullptr};
+    QPushButton* m_active_button{nullptr};
 
     QVBoxLayout* m_main_layout;
     QVBoxLayout* m_widgets_layout;
@@ -52,8 +53,16 @@ private:
     std::shared_ptr<QWidget> m_widget_v_l;
     std::shared_ptr<QWidget> m_widget_h_l;
 
-    bool m_is_menu_widgets_shown{true};    //Debug version
+    bool m_is_menu_widgets_shown{false};
+
+    void swap_widgets(const std::string& name);
 
 private slots:
     void show_hide_menu_widgets();
+
+    void show_statisctics();
+    void show_documents();
+    void show_calendar();
+    void show_contacts();
+    void show_chat();
 };

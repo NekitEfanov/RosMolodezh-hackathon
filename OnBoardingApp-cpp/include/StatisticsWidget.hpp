@@ -2,6 +2,10 @@
 
 #include "BaseWidget.hpp"
 
-class StatiscticsWidget : public BaseWidget {
+class StatisticsWidget : public BaseWidget {
 public:
+    explicit StatisticsWidget(QWidget* parent = nullptr);
+
+
+private:
 };
